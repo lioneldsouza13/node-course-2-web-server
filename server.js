@@ -53,11 +53,17 @@ app.get('/about',(req,res)=>
    });
 });
 
+app.get('/projects',(req,res)=>{
+    res.render('projects.hbs')
+});
+
 app.get('/bad',(req,res)=>{
     res.send({
         error: 'Unable to receive data'
     })
 })
+
+
 app.listen(port,()=>{
     console.log(`Server is up on port ${port}`)
 });
