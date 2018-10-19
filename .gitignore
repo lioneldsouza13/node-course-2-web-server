@@ -1,0 +1,7 @@
+node_modules/
+.idea/
+app.js
+bin/
+package-lock.json
+routes/
+server.log
